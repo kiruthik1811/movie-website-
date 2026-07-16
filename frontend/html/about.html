@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Marvel Universe – Learn about this fan site and get in touch with us." />
+  <title>About – Marvel Universe</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <nav class="navbar" id="main-nav"></nav>
+
+  <main class="page-wrapper">
+
+    <!-- ── Page Banner ── -->
+    <section class="page-banner" style="padding-top:6rem;">
+      <span class="section-label">Our Story</span>
+      <h1 class="page-banner-title">ABOUT <span style="color:var(--red);-webkit-text-fill-color:var(--red);">US</span></h1>
+      <p class="page-banner-sub">Built by fans, for fans. A love letter to the Marvel Universe.</p>
+    </section>
+
+    <!-- ── About Section ── -->
+    <section class="section" style="padding-top:2rem;">
+      <div class="about-grid">
+        <!-- Left: About content -->
+        <div class="animate-in">
+          <span class="section-label">Who We Are</span>
+          <h2 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,4vw,3rem);letter-spacing:3px;margin-bottom:1rem;">ASSEMBLED WITH <span style="color:var(--red);">PASSION</span></h2>
+          <p style="color:var(--text-muted);line-height:1.8;margin-bottom:1rem;">
+            Marvel Universe is an independent fan site dedicated to celebrating the incredible world of Marvel. From the golden age comics of Stan Lee and Jack Kirby to the modern MCU, we cover it all.
+          </p>
+          <p style="color:var(--text-muted);line-height:1.8;margin-bottom:2rem;">
+            Our mission is to be the ultimate resource for Marvel fans everywhere — providing detailed hero profiles, movie timelines, and comic book history all in one beautiful place.
+          </p>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+            <a href="heroes.html" class="btn btn-liquid" id="about-heroes-btn">⚡ Meet the Heroes</a>
+            <a href="#contact" class="btn btn-ghost" id="about-contact-btn">✉️ Contact Us</a>
+          </div>
+
+          <!-- Stats -->
+          <div class="about-stats-row" style="margin-top:2.5rem;">
+            <div class="glass-card about-stat-card animate-in">
+              <div class="about-stat-num">10+</div>
+              <div class="about-stat-label">Heroes Profiled</div>
+            </div>
+            <div class="glass-card about-stat-card animate-in" style="animation-delay:0.1s;">
+              <div class="about-stat-num" style="color:var(--gold);">8</div>
+              <div class="about-stat-label">MCU Films</div>
+            </div>
+            <div class="glass-card about-stat-card animate-in" style="animation-delay:0.2s;">
+              <div class="about-stat-num" style="color:var(--purple);">60+</div>
+              <div class="about-stat-label">Years of Marvel</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Tech Stack -->
+        <div class="animate-in" style="animation-delay:0.2s;">
+          <div class="glass-card" style="padding:2.5rem;">
+            <div class="detail-section-label">BUILT WITH</div>
+            <div style="display:flex;flex-direction:column;gap:1rem;margin-top:1rem;">
+              ${[
+                { icon: '🟨', name: 'HTML5 + CSS3', desc: 'Semantic markup & liquid UI design' },
+                { icon: '⚡', name: 'Vanilla JavaScript', desc: 'No frameworks, pure performance' },
+                { icon: '🟢', name: 'Node.js + Express', desc: 'Fast REST API backend' },
+                { icon: '🎨', name: 'Liquid UI Design', desc: 'Glassmorphism & blob animations' },
+                { icon: '🔤', name: 'Google Fonts', desc: 'Bebas Neue + Inter typography' }
+              ].map(item => `
+                <div style="display:flex;gap:1rem;align-items:flex-start;padding:0.75rem;background:var(--surface);border-radius:var(--radius-sm);">
+                  <span style="font-size:1.5rem;">${item.icon}</span>
+                  <div>
+                    <div style="font-weight:600;font-size:0.9rem;">${item.name}</div>
+                    <div style="color:var(--text-muted);font-size:0.8rem;">${item.desc}</div>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Features Strip ── -->
+    <section style="padding:2rem 2rem 4rem;max-width:1400px;margin:0 auto;">
+      <div class="grid-3">
+        ${[
+          { icon: '🔍', title: 'Searchable', desc: 'Find any hero, movie, or comic instantly with real-time search.' },
+          { icon: '⚡', title: 'Fast API', desc: 'Node.js backend serves all data via REST API endpoints.' },
+          { icon: '🎨', title: 'Liquid UI', desc: 'Fluid animations, glassmorphism, and dynamic blob backgrounds.' },
+          { icon: '📱', title: 'Responsive', desc: 'Perfectly designed for desktop, tablet, and mobile.' },
+          { icon: '🌙', title: 'Dark Mode', desc: 'Premium dark theme easy on the eyes — always.' },
+          { icon: '🦸', title: 'All Heroes', desc: '10 iconic Marvel heroes with full bios, powers, and stats.' }
+        ].map((f, i) => `
+          <div class="glass-card animate-in" style="padding:2rem;animation-delay:${i*0.1}s;">
+            <div style="font-size:2.5rem;margin-bottom:1rem;">${f.icon}</div>
+            <div style="font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:2px;margin-bottom:0.5rem;">${f.title}</div>
+            <div style="color:var(--text-muted);font-size:0.85rem;line-height:1.6;">${f.desc}</div>
+          </div>
+        `).join('')}
+      </div>
+    </section>
+
+    <!-- ── Heroes Showcase ── -->
+    <section class="section" style="padding-top:1rem;padding-bottom:2rem;">
+      <div class="section-header">
+        <span class="section-label">Earth's Mightiest</span>
+        <h2 class="section-title">MARVEL <span style="color:var(--red);">HEROES</span></h2>
+        <p class="section-desc">The legends behind this site — the icons we celebrate every day.</p>
+      </div>
+      <div class="heroes-showcase-grid" id="heroes-showcase"></div>
+    </section>
+
+    <!-- ── Contact Form ── -->
+    <section class="section" id="contact" style="padding-top:2rem;">
+      <div style="max-width:640px;margin:0 auto;">
+        <div class="section-header">
+          <span class="section-label">Get In Touch</span>
+          <h2 class="section-title">CONTACT US</h2>
+          <p class="section-desc">Have a suggestion, found an error, or just want to talk Marvel? Reach out!</p>
+        </div>
+
+        <div class="glass-card animate-in" style="padding:2.5rem;">
+          <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+              <div class="form-group">
+                <label class="form-label" for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="Tony Stark" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="tony@stark.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" class="form-input" placeholder="Your favorite hero is..." />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Message</label>
+              <textarea id="contact-message" class="form-textarea" rows="5" placeholder="I am Iron Man..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-liquid" id="contact-submit-btn" style="width:100%;justify-content:center;">
+              🚀 Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="main-footer"></footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = document.getElementById('contact-submit-btn');
+      btn.textContent = '✅ Message Sent!';
+      btn.style.background = 'var(--green)';
+      showToast('Message sent! We\'ll get back to you soon. 🦸');
+      setTimeout(() => {
+        btn.textContent = '🚀 Send Message';
+        btn.style.background = '';
+        document.getElementById('contact-form').reset();
+      }, 3000);
+    }
+
+    // ── Heroes Showcase ──────────────────────────────────────
+    async function loadHeroesShowcase() {
+      const grid = document.getElementById('heroes-showcase');
+      if (!grid) return;
+
+      try {
+        const res  = await fetch('http://localhost:3000/api/heroes');
+        const data = await res.json();
+        const heroes = data.data || [];
+
+        grid.innerHTML = heroes.map((h, i) => `
+          <a href="hero-detail.html?id=${h.id}" class="hero-showcase-card animate-in"
+             id="showcase-hero-${h.id}"
+             style="animation-delay:${i * 0.07}s;--hc:${h.color};">
+            <div class="hero-showcase-glow" style="background:${h.gradient};"></div>
+            <div class="hero-showcase-symbol">${h.symbol}</div>
+            <div class="hero-showcase-name">${h.name}</div>
+            <div class="hero-showcase-alias">${h.realName}</div>
+            <div class="hero-showcase-powers">
+              ${h.powers.slice(0,2).map(p => `<span class="hero-power-tag">${p}</span>`).join('')}
+            </div>
+            <div class="hero-showcase-arrow">→</div>
+          </a>
+        `).join('');
+      } catch (err) {
+        // Fallback cards if API is not running
+        const fallback = [
+          { id:1, name:'Iron Man',       realName:'Tony Stark',      symbol:'⚙️', color:'#e23636', powers:['Powered Armor','Energy Repulsors'] },
+          { id:2, name:'Spider-Man',     realName:'Peter Parker',    symbol:'🕷️', color:'#c0392b', powers:['Wall-Crawling','Spider-Sense'] },
+          { id:3, name:'Captain America',realName:'Steve Rogers',    symbol:'🛡️', color:'#3d6fe2', powers:['Vibranium Shield','Super Soldier'] },
+          { id:4, name:'Thor',           realName:'Thor Odinson',    symbol:'⚡', color:'#b01c1c', powers:['God of Thunder','Mjolnir'] },
+          { id:5, name:'Black Widow',    realName:'Natasha Romanoff',symbol:'🕸️', color:'#e23636', powers:['Master Spy','Widow\'s Bite'] },
+          { id:6, name:'Hulk',           realName:'Bruce Banner',    symbol:'💪', color:'#27ae60', powers:['Unlimited Strength','Regeneration'] },
+          { id:7, name:'Doctor Strange', realName:'Stephen Strange', symbol:'🌀', color:'#8e44ad', powers:['Sorcery','Time Manipulation'] },
+          { id:8, name:'Black Panther',  realName:'T\'Challa',       symbol:'🐾', color:'#2c3e50', powers:['Vibranium Suit','Panther Agility'] },
+          { id:9, name:'Scarlet Witch',  realName:'Wanda Maximoff',  symbol:'🔮', color:'#e23636', powers:['Reality Manipulation','Chaos Magic'] },
+          { id:10,name:'Captain Marvel', realName:'Carol Danvers',   symbol:'⭐', color:'#c0392b', powers:['Binary Mode','Photon Blasts'] },
+        ];
+        grid.innerHTML = fallback.map((h, i) => `
+          <a href="hero-detail.html?id=${h.id}" class="hero-showcase-card animate-in"
+             id="showcase-hero-${h.id}"
+             style="animation-delay:${i * 0.07}s;--hc:${h.color};">
+            <div class="hero-showcase-glow" style="background:radial-gradient(circle at 30% 30%, ${h.color}80, transparent 70%);"></div>
+            <div class="hero-showcase-symbol">${h.symbol}</div>
+            <div class="hero-showcase-name">${h.name}</div>
+            <div class="hero-showcase-alias">${h.realName}</div>
+            <div class="hero-showcase-powers">
+              ${h.powers.map(p => `<span class="hero-power-tag">${p}</span>`).join('')}
+            </div>
+            <div class="hero-showcase-arrow">→</div>
+          </a>
+        `).join('');
+      }
+    }
+
+    loadHeroesShowcase();
+  </script>
+
+  <style>
+    /* ── Heroes Showcase Grid ── */
+    .heroes-showcase-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.25rem;
+      padding: 0 1rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .hero-showcase-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.25rem 1.5rem;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 1.25rem;
+      text-decoration: none;
+      color: #fff;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.35s cubic-bezier(.22,1,.36,1),
+                  border-color 0.3s,
+                  box-shadow 0.3s;
+    }
+
+    .hero-showcase-card:hover {
+      transform: translateY(-8px) scale(1.03);
+      border-color: var(--hc, var(--red));
+      box-shadow: 0 12px 40px color-mix(in srgb, var(--hc, var(--red)) 40%, transparent);
+    }
+
+    .hero-showcase-card:hover .hero-showcase-glow {
+      opacity: 1;
+    }
+
+    .hero-showcase-card:hover .hero-showcase-arrow {
+      opacity: 1;
+      transform: translateX(4px);
+    }
+
+    .hero-showcase-glow {
+      position: absolute;
+      inset: 0;
+      opacity: 0.25;
+      transition: opacity 0.35s;
+      border-radius: inherit;
+    }
+
+    .hero-showcase-symbol {
+      font-size: 3rem;
+      margin-bottom: 0.75rem;
+      filter: drop-shadow(0 0 12px color-mix(in srgb, var(--hc, #e23636) 80%, transparent));
+      transition: transform 0.3s;
+      z-index: 1;
+    }
+
+    .hero-showcase-card:hover .hero-showcase-symbol {
+      transform: scale(1.2) rotate(-5deg);
+    }
+
+    .hero-showcase-name {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.15rem;
+      letter-spacing: 2px;
+      color: #fff;
+      text-align: center;
+      z-index: 1;
+    }
+
+    .hero-showcase-alias {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.45);
+      margin-bottom: 0.75rem;
+      z-index: 1;
+    }
+
+    .hero-showcase-powers {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      justify-content: center;
+      z-index: 1;
+    }
+
+    .hero-power-tag {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.65);
+      font-size: 0.62rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .hero-showcase-arrow {
+      position: absolute;
+      bottom: 0.75rem;
+      right: 1rem;
+      font-size: 1rem;
+      color: var(--hc, var(--red));
+      opacity: 0;
+      transition: opacity 0.3s, transform 0.3s;
+    }
+
+    @media (max-width: 600px) {
+      .heroes-showcase-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</body>
+</html>
+
