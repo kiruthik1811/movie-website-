@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "title": "Iron Man",
+    "year": 2008,
+    "phase": 1,
+    "rating": "PG-13",
+    "duration": "2h 6m",
+    "description": "Billionaire Tony Stark builds a powered suit of armor to save the world and becomes Iron Man, sparking the beginning of the Marvel Cinematic Universe.",
+    "genre": ["Action", "Sci-Fi"],
+    "boxOffice": "$585.2M",
+    "gradient": "linear-gradient(135deg, #e23636, #7a0000)"
+  },
+  {
+    "id": 2,
+    "title": "The Avengers",
+    "year": 2012,
+    "phase": 1,
+    "rating": "PG-13",
+    "duration": "2h 23m",
+    "description": "Earth's mightiest heroes must come together and learn to fight as a team to stop the mischievous Loki and his alien army from enslaving humanity.",
+    "genre": ["Action", "Adventure"],
+    "boxOffice": "$1.52B",
+    "gradient": "linear-gradient(135deg, #3d0000, #e23636)"
+  },
+  {
+    "id": 3,
+    "title": "Captain America: The Winter Soldier",
+    "year": 2014,
+    "phase": 2,
+    "rating": "PG-13",
+    "duration": "2h 16m",
+    "description": "Steve Rogers struggles to embrace his role in the modern world and teams up with Black Widow to battle a powerful yet shadowy enemy.",
+    "genre": ["Action", "Thriller"],
+    "boxOffice": "$714.4M",
+    "gradient": "linear-gradient(135deg, #b01c1c, #000000)"
+  },
+  {
+    "id": 4,
+    "title": "Guardians of the Galaxy",
+    "year": 2014,
+    "phase": 2,
+    "rating": "PG-13",
+    "duration": "2h 1m",
+    "description": "A group of intergalactic criminals must pull together to stop a fanatical warrior with plans to purge the universe.",
+    "genre": ["Action", "Comedy", "Sci-Fi"],
+    "boxOffice": "$773.3M",
+    "gradient": "linear-gradient(135deg, #7a0000, #e23636)"
+  },
+  {
+    "id": 5,
+    "title": "Avengers: Infinity War",
+    "year": 2018,
+    "phase": 3,
+    "rating": "PG-13",
+    "duration": "2h 29m",
+    "description": "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation ends the universe.",
+    "genre": ["Action", "Adventure"],
+    "boxOffice": "$2.05B",
+    "gradient": "linear-gradient(135deg, #e23636, #3d0000)"
+  },
+  {
+    "id": 6,
+    "title": "Avengers: Endgame",
+    "year": 2019,
+    "phase": 3,
+    "rating": "PG-13",
+    "duration": "3h 1m",
+    "description": "After the devastating events of Infinity War, the Avengers assemble once more to undo Thanos' actions and restore order to the universe.",
+    "genre": ["Action", "Drama", "Adventure"],
+    "boxOffice": "$2.79B",
+    "gradient": "linear-gradient(135deg, #000000, #e23636)"
+  },
+  {
+    "id": 7,
+    "title": "Spider-Man: No Way Home",
+    "year": 2021,
+    "phase": 4,
+    "rating": "PG-13",
+    "duration": "2h 28m",
+    "description": "Peter Parker seeks Doctor Strange's help after his identity is revealed, but things go wrong and multiverse villains invade his world.",
+    "genre": ["Action", "Sci-Fi"],
+    "boxOffice": "$1.90B",
+    "gradient": "linear-gradient(135deg, #c0392b, #1a0000)"
+  },
+  {
+    "id": 8,
+    "title": "Doctor Strange in the Multiverse of Madness",
+    "year": 2022,
+    "phase": 4,
+    "rating": "PG-13",
+    "duration": "2h 6m",
+    "description": "Doctor Strange teams with a mysterious teenager who can travel through multiverses, facing off against other-dimensional forces to protect their world.",
+    "genre": ["Action", "Horror", "Sci-Fi"],
+    "boxOffice": "$955.8M",
+    "gradient": "linear-gradient(135deg, #5a0000, #e23636)"
+  }
+]

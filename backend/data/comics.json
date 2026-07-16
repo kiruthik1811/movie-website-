@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Amazing Fantasy #15",
+    "year": 1962,
+    "issue": "#15",
+    "writer": "Stan Lee",
+    "artist": "Steve Ditko",
+    "description": "The debut of Spider-Man! Peter Parker is bitten by a radioactive spider and gains incredible powers. This issue changed comics forever.",
+    "significance": "First appearance of Spider-Man",
+    "gradient": "linear-gradient(135deg, #e23636, #1a0000)",
+    "symbol": "🕷️"
+  },
+  {
+    "id": 2,
+    "title": "The Avengers #1",
+    "year": 1963,
+    "issue": "#1",
+    "writer": "Stan Lee",
+    "artist": "Jack Kirby",
+    "description": "Earth's Mightiest Heroes unite for the first time! Iron Man, Thor, Hulk, Ant-Man, and Wasp band together to fight Loki.",
+    "significance": "First appearance of the Avengers",
+    "gradient": "linear-gradient(135deg, #3d0000, #e23636)",
+    "symbol": "⚡"
+  },
+  {
+    "id": 3,
+    "title": "X-Men #1",
+    "year": 1963,
+    "issue": "#1",
+    "writer": "Stan Lee",
+    "artist": "Jack Kirby",
+    "description": "Professor Xavier gathers his mutant students – Cyclops, Marvel Girl, Beast, Iceman, and Angel – to form the original X-Men team.",
+    "significance": "First appearance of the X-Men",
+    "gradient": "linear-gradient(135deg, #7a0000, #000000)",
+    "symbol": "🔱"
+  },
+  {
+    "id": 4,
+    "title": "Iron Man #128",
+    "year": 1979,
+    "issue": "#128",
+    "writer": "David Michelinie",
+    "artist": "Bob Layton",
+    "description": "Demon in a Bottle – Tony Stark battles his greatest enemy: alcoholism. One of the most important and mature stories in Marvel history.",
+    "significance": "Iconic Iron Man story arc",
+    "gradient": "linear-gradient(135deg, #b01c1c, #e23636)",
+    "symbol": "⚙️"
+  },
+  {
+    "id": 5,
+    "title": "Civil War #1",
+    "year": 2006,
+    "issue": "#1",
+    "writer": "Mark Millar",
+    "artist": "Steve McNiven",
+    "description": "A superhero civil war splits the Marvel universe as Iron Man and Captain America clash over the Superhuman Registration Act.",
+    "significance": "Heroes divided, universe shattered",
+    "gradient": "linear-gradient(135deg, #000000, #c0392b)",
+    "symbol": "⚔️"
+  },
+  {
+    "id": 6,
+    "title": "Infinity Gauntlet #1",
+    "year": 1991,
+    "issue": "#1",
+    "writer": "Jim Starlin",
+    "artist": "George Pérez",
+    "description": "Thanos obtains all six Infinity Gems and becomes omnipotent. With a snap, he wipes out half of all life in the universe.",
+    "significance": "Thanos becomes a god",
+    "gradient": "linear-gradient(135deg, #5a0000, #e23636)",
+    "symbol": "✨"
+  }
+]
