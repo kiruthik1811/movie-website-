@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Marvel Movies – Explore the Marvel Cinematic Universe from Phase 1 to Phase 4 and beyond." />
+  <title>Movies – Marvel Universe</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <nav class="navbar" id="main-nav"></nav>
+
+  <main class="page-wrapper">
+
+    <!-- ── Page Banner ── -->
+    <section class="page-banner" style="padding-top:6rem;">
+      <span class="section-label">The MCU Journey</span>
+      <h1 class="page-banner-title">MARVEL <span style="color:var(--red);-webkit-text-fill-color:var(--red);">MOVIES</span></h1>
+      <p class="page-banner-sub">From the genesis of Iron Man to the infinite multiverse — every film, every saga.</p>
+    </section>
+
+    <!-- ── Phase Filters ── -->
+    <section style="padding:0 2rem 2rem;max-width:1400px;margin:0 auto;">
+      <div style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+        <button class="filter-btn active" data-phase="all" id="filter-all">All Phases</button>
+        <button class="filter-btn" data-phase="1" id="filter-phase1">Phase 1</button>
+        <button class="filter-btn" data-phase="2" id="filter-phase2">Phase 2</button>
+        <button class="filter-btn" data-phase="3" id="filter-phase3">Phase 3</button>
+        <button class="filter-btn" data-phase="4" id="filter-phase4">Phase 4</button>
+      </div>
+    </section>
+
+    <!-- ── Movies Content ── -->
+    <section class="section" style="padding-top:0;">
+      <div id="movies-container">
+        <div class="loader-wrap"><div class="loader"></div><p style="color:var(--text-muted);">Loading movies...</p></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="main-footer"></footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/movies.js"></script>
+</body>
+</html>

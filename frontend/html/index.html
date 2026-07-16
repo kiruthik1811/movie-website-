@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Marvel Universe – Your ultimate destination for Marvel heroes, movies, and comics. Explore Earth's mightiest heroes." />
+  <title>Marvel Universe – Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <nav class="navbar" id="main-nav"></nav>
+
+  <main class="page-wrapper">
+
+    <!-- ── Hero Banner ── -->
+    <section class="hero-section">
+      <div class="liquid-ring"></div>
+      <div class="liquid-ring"></div>
+      <div class="liquid-ring"></div>
+      <div class="hero-content">
+        <div class="hero-badge">🌟 The Marvel Universe Awaits</div>
+        <h1 class="hero-title">
+          MARVEL<br/><span>UNIVERSE</span>
+        </h1>
+        <p class="hero-subtitle">
+          Explore the world's most iconic superheroes, legendary movies, and timeless comic book stories. 
+          Earth's mightiest heroes, assembled for you.
+        </p>
+        <div class="hero-actions">
+          <a href="heroes.html" class="btn btn-liquid" id="explore-heroes-btn">⚡ Explore Heroes</a>
+          <a href="movies.html" class="btn btn-ghost" id="watch-movies-btn">🎬 Watch Movies</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Wave ── -->
+    <div class="wave-divider">
+      <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="rgba(226,54,54,0.04)"/>
+      </svg>
+    </div>
+
+    <!-- ── Stats Strip ── -->
+    <section style="padding:3rem 2rem;">
+      <div style="max-width:1400px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;">
+        <div class="glass-card animate-in" style="padding:2rem;text-align:center;">
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--red);letter-spacing:2px;">10+</div>
+          <div style="color:var(--text-muted);font-size:0.85rem;margin-top:4px;">Iconic Heroes</div>
+        </div>
+        <div class="glass-card animate-in" style="padding:2rem;text-align:center;">
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--gold);letter-spacing:2px;">8</div>
+          <div style="color:var(--text-muted);font-size:0.85rem;margin-top:4px;">Marvel Movies</div>
+        </div>
+        <div class="glass-card animate-in" style="padding:2rem;text-align:center;">
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--purple);letter-spacing:2px;">6</div>
+          <div style="color:var(--text-muted);font-size:0.85rem;margin-top:4px;">Classic Comics</div>
+        </div>
+        <div class="glass-card animate-in" style="padding:2rem;text-align:center;">
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--blue);letter-spacing:2px;">$9B+</div>
+          <div style="color:var(--text-muted);font-size:0.85rem;margin-top:4px;">Box Office Total</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Featured Heroes ── -->
+    <section class="section">
+      <div class="section-header">
+        <span class="section-label">Earth's Mightiest</span>
+        <h2 class="section-title">FEATURED HEROES</h2>
+        <p class="section-desc">Meet the champions who stand between humanity and total annihilation.</p>
+      </div>
+
+      <div class="grid-3" id="featured-heroes-grid">
+        <!-- Filled by JS -->
+        <div class="glass-card hero-card animate-in" style="padding:2rem;">
+          <div style="height:200px;display:flex;align-items:center;justify-content:center;"><div class="loader"></div></div>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:2.5rem;">
+        <a href="heroes.html" class="btn btn-liquid" id="view-all-heroes-btn">View All Heroes →</a>
+      </div>
+    </section>
+
+    <!-- ── Wave ── -->
+    <div class="wave-divider">
+      <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,30 C480,60 960,0 1440,30 L1440,60 L0,60 Z" fill="rgba(142,68,173,0.04)"/>
+      </svg>
+    </div>
+
+    <!-- ── Latest Movies CTA ── -->
+    <section style="padding:4rem 2rem;">
+      <div style="max-width:1400px;margin:0 auto;">
+        <div class="glass-card" style="padding:4rem 3rem;position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(226,54,54,0.08),rgba(142,68,173,0.06));">
+          <div style="position:absolute;top:-60px;right:-60px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(226,54,54,0.15),transparent);pointer-events:none;"></div>
+          <div style="position:absolute;bottom:-40px;left:-40px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(142,68,173,0.12),transparent);pointer-events:none;"></div>
+          <div style="position:relative;z-index:1;display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center;flex-wrap:wrap;">
+            <div>
+              <div class="section-label">Now Playing</div>
+              <h2 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,5vw,3.5rem);letter-spacing:3px;margin-bottom:1rem;">THE MARVEL CINEMATIC UNIVERSE</h2>
+              <p style="color:var(--text-muted);font-size:0.95rem;max-width:500px;line-height:1.7;">
+                From Iron Man's debut in 2008 to the sprawling Multiverse Saga — every movie, every battle, every sacrifice. Relive the journey.
+              </p>
+            </div>
+            <a href="movies.html" class="btn btn-liquid" id="explore-mcu-btn" style="white-space:nowrap;">🎬 Explore MCU</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Comics Teaser ── -->
+    <section class="section">
+      <div class="section-header">
+        <span class="section-label">The Source</span>
+        <h2 class="section-title">LEGENDARY COMICS</h2>
+        <p class="section-desc">The stories that started it all. Iconic issues that shaped the Marvel Universe.</p>
+      </div>
+      <div id="home-comics-grid" class="grid-3">
+        <div class="loader-wrap"><div class="loader"></div></div>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem;">
+        <a href="comics.html" class="btn btn-ghost" id="view-all-comics-btn">View All Comics →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="main-footer"></footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Load 3 featured heroes for home page
+    async function loadFeaturedHeroes() {
+      const grid = document.getElementById('featured-heroes-grid');
+      const res = await apiFetch('/heroes');
+      if (!res) return;
+      const featured = res.data.slice(0, 3);
+      grid.innerHTML = featured.map((hero, i) => `
+        <div class="glass-card hero-card animate-in" style="--card-accent:${hero.color};animation-delay:${i*0.15}s;" onclick="location.href='hero-detail.html?id=${hero.id}'">
+          <div class="hero-card-icon" style="background:${hero.gradient};">${hero.symbol}</div>
+          <div class="hero-card-name">${hero.name}</div>
+          <div class="hero-card-realname">${hero.realName}</div>
+          <div class="hero-card-desc">${hero.description}</div>
+          <div class="hero-card-powers">
+            ${hero.powers.slice(0,3).map(p=>`<span class="power-tag">${p}</span>`).join('')}
+          </div>
+        </div>
+      `).join('');
+      initScrollAnimations();
+      initLiquidButtons();
+    }
+
+    // Load 3 featured comics for home page
+    async function loadFeaturedComics() {
+      const grid = document.getElementById('home-comics-grid');
+      const res = await apiFetch('/comics');
+      if (!res) return;
+      const featured = res.data.slice(0, 3);
+      grid.innerHTML = featured.map((comic, i) => `
+        <div class="glass-card comic-card animate-in" style="animation-delay:${i*0.15}s;">
+          <div class="comic-card-banner" style="background:${comic.gradient};">
+            <span style="position:relative;z-index:1;">${comic.symbol}</span>
+          </div>
+          <div class="comic-card-body">
+            <div class="comic-issue">Issue ${comic.issue} · ${comic.year}</div>
+            <div class="comic-title">${comic.title}</div>
+            <div class="comic-desc">${comic.description}</div>
+            <div class="comic-significance">⭐ ${comic.significance}</div>
+          </div>
+        </div>
+      `).join('');
+      initScrollAnimations();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadFeaturedHeroes();
+      loadFeaturedComics();
+    });
+  </script>
+</body>
+</html>

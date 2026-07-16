@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Marvel Hero Detail – Full biography, powers, and stats for your favorite Marvel hero." />
+  <title>Hero Detail – Marvel Universe</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <nav class="navbar" id="main-nav"></nav>
+
+  <main class="page-wrapper">
+    <section class="section" style="padding-top:3rem;">
+
+      <!-- Back -->
+      <a href="heroes.html" style="display:inline-flex;align-items:center;gap:8px;color:var(--text-muted);font-size:0.85rem;margin-bottom:2.5rem;transition:color 0.3s;" onmouseover="this.style.color='var(--red)'" onmouseout="this.style.color='var(--text-muted)'">
+        ← Back to Heroes
+      </a>
+
+      <div id="hero-detail-content">
+        <div class="loader-wrap"><div class="loader"></div><p style="color:var(--text-muted);">Loading hero data...</p></div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer" id="main-footer"></footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    async function loadHeroDetail() {
+      const id = getParam('id');
+      const container = document.getElementById('hero-detail-content');
+
+      if (!id) {
+        container.innerHTML = `<div class="empty-state"><div class="empty-state-icon">❓</div><h3>Hero Not Found</h3><p>No hero ID specified.</p></div>`;
+        return;
+      }
+
+      const res = await apiFetch(`/heroes/${id}`);
+      if (!res || !res.data) {
+        container.innerHTML = `<div class="empty-state"><div class="empty-state-icon">❓</div><h3>Hero Not Found</h3><p>This hero doesn't exist.</p></div>`;
+        return;
+      }
+
+      const hero = res.data;
+      document.title = `${hero.name} – Marvel Universe`;
+
+      container.innerHTML = `
+        <div class="hero-detail-grid">
+          <!-- Left Panel -->
+          <div class="hero-detail-left animate-in">
+            <div class="glass-card" style="padding:2rem;--card-accent:${hero.color};">
+              <div class="hero-detail-avatar" style="background:${hero.gradient};">
+                <span>${hero.symbol}</span>
+                <div style="position:absolute;inset:0;background:radial-gradient(circle at 30% 30%,rgba(255,255,255,0.15),transparent 60%);"></div>
+              </div>
+              <div class="hero-detail-name">${hero.name}</div>
+              <div class="hero-detail-realname">${hero.realName}</div>
+              <div class="hero-detail-team">🛡️ ${hero.team}</div>
+              <div style="margin-top:1rem;font-size:0.78rem;color:var(--text-muted);">
+                📅 First Appearance:<br/>
+                <span style="color:var(--text);font-weight:500;">${hero.firstAppearance}</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Panel -->
+          <div class="animate-in" style="animation-delay:0.15s;">
+            <div class="glass-card" style="padding:2.5rem;margin-bottom:1.5rem;">
+              <div class="detail-section-label">BIOGRAPHY</div>
+              <p class="hero-detail-desc">${hero.description}</p>
+
+              <div class="detail-section-label" style="margin-top:1.5rem;">POWERS & ABILITIES</div>
+              <div class="hero-card-powers" style="margin-bottom:0;">
+                ${hero.powers.map(p => `<span class="power-tag">${p}</span>`).join('')}
+              </div>
+            </div>
+
+            <div class="glass-card animate-in" style="padding:2.5rem;animation-delay:0.3s;">
+              <div class="detail-section-label">POWER STATS</div>
+              <div style="display:flex;flex-direction:column;gap:1rem;margin-top:0.5rem;">
+                ${Object.entries(hero.stats).map(([key, val]) => `
+                  <div class="stat-bar-wrap">
+                    <div class="stat-bar-label">
+                      <span style="text-transform:capitalize;">${key}</span>
+                      <span style="color:var(--red);font-weight:600;">${val}</span>
+                    </div>
+                    <div class="stat-bar">
+                      <div class="stat-bar-fill" data-value="${val}" style="width:0%;background:${hero.gradient};"></div>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+
+            <div style="display:flex;gap:1rem;margin-top:1.5rem;flex-wrap:wrap;">
+              <a href="heroes.html" class="btn btn-ghost">← All Heroes</a>
+              <button class="btn btn-liquid" onclick="showToast('Added to favorites! ❤️')" id="fav-hero-btn">❤️ Add to Favorites</button>
+            </div>
+          </div>
+        </div>
+      `;
+
+      // Trigger stat bar animations
+      setTimeout(() => {
+        document.querySelectorAll('.stat-bar-fill').forEach(bar => {
+          bar.style.width = bar.dataset.value + '%';
+        });
+        initScrollAnimations();
+        initLiquidButtons();
+      }, 300);
+    }
+
+    document.addEventListener('DOMContentLoaded', loadHeroDetail);
+  </script>
+</body>
+</html>
